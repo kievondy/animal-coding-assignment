@@ -23,4 +23,14 @@ public class BirdTest {
 		assertTrue(testSubject.walk().equals(Bird.MSG_ANIMAL_WALKING));
 	}
 
+	@Test
+	public void testCanFly() {
+		assertTrue(testSubject.canFly());
+	}
+
+	@Test
+	public void testCanSwim() {
+		assertTrue(!testSubject.canSwim());
+	}
+
 }
