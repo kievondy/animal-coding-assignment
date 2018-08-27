@@ -1,6 +1,8 @@
 package com.singtel.animal;
 
 import com.singtel.animal.model.Bird;
+import com.singtel.animal.model.Chicken;
+import com.singtel.animal.model.Duck;
 
 public class Solution {
 
@@ -9,6 +11,10 @@ public class Solution {
 		System.out.println(bird.walk());
 		System.out.println(bird.fly());
 		System.out.println(bird.sing());
+
+		System.out.println(new Duck().sing());
+
+		System.out.println(new Chicken().sing());
 	}
 
 }

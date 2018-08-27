@@ -13,4 +13,14 @@ public class Bird extends Animal {
 		return MSG_BIRD_SINGING;
 	}
 
+	// Standard behaviour for standard bird. E.g. An eagle
+	public boolean canFly() {
+		return true;
+	}
+
+	// Standard behaviour for standard bird. E.g. An eagle
+	public boolean canSwim() {
+		return false;
+	}
+
 }
