@@ -2,7 +2,9 @@ package com.singtel.animal.model;
 
 public class Animal {
 
-	public void walk() {
-		System.out.println("I am walking");
+	static final String MSG_ANIMAL_WALKING = "I am walking";
+
+	public String walk() {
+		return MSG_ANIMAL_WALKING;
 	}
 }
