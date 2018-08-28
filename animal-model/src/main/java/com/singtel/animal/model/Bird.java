@@ -23,10 +23,4 @@ public class Bird implements Animal {
 		return true;
 	}
 
-	// Standard behaviour for standard bird. E.g. An eagle
-	@Override
-	public boolean canSwim() {
-		return false;
-	}
-
 }

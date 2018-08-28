@@ -28,9 +28,4 @@ public class BirdTest {
 		assertTrue(testSubject.canFly());
 	}
 
-	@Test
-	public void testCanSwim() {
-		assertTrue(!testSubject.canSwim());
-	}
-
 }
