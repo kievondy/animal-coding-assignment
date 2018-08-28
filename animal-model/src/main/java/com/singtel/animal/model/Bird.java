@@ -1,9 +1,14 @@
 package com.singtel.animal.model;
 
-public class Bird extends Animal {
+public class Bird implements Animal {
 
+	static final String MSG_BIRD_WALKING = "I am walking";
 	static final String MSG_BIRD_FLYING = "I am flying";
 	static final String MSG_BIRD_SINGING = "Chirp chirp";
+
+	public String walk() {
+		return MSG_BIRD_WALKING;
+	}
 
 	public String fly() {
 		return MSG_BIRD_FLYING;
@@ -19,6 +24,7 @@ public class Bird extends Animal {
 	}
 
 	// Standard behaviour for standard bird. E.g. An eagle
+	@Override
 	public boolean canSwim() {
 		return false;
 	}

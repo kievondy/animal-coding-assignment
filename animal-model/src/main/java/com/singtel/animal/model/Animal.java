@@ -1,10 +1,7 @@
 package com.singtel.animal.model;
 
-public class Animal {
+public interface Animal {
 
-	static final String MSG_ANIMAL_WALKING = "I am walking";
+	boolean canSwim();
 
-	public String walk() {
-		return MSG_ANIMAL_WALKING;
-	}
 }
