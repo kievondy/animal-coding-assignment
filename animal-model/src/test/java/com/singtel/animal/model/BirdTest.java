@@ -10,7 +10,7 @@ public class BirdTest {
 
 	@Test
 	public void testFly() {
-		assertTrue(testSubject.fly().equals(Bird.MSG_BIRD_FLYING));
+		assertTrue(testSubject.fly().equals(AnimalThatCanFly.MSG_FLYING));
 	}
 
 	@Test
@@ -20,7 +20,7 @@ public class BirdTest {
 
 	@Test
 	public void testWalk() {
-		assertTrue(testSubject.walk().equals(Bird.MSG_BIRD_WALKING));
+		assertTrue(testSubject.walk().equals(AnimalThatCanWalk.MSG_WALKING));
 	}
 
 	@Test
