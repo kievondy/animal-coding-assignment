@@ -1,6 +1,6 @@
 package com.singtel.animal.model;
 
-public class Fish implements Animal, AnimalThatCanSwim {
+public class Fish implements Vertebrate, AnimalThatCanSwim {
 
 	FishSize size = null;
 	FishColour colour = null;

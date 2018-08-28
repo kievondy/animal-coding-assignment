@@ -1,6 +1,6 @@
 package com.singtel.animal.model;
 
-public class Bird implements Animal {
+public class Bird implements Vertebrate {
 
 	static final String MSG_BIRD_WALKING = "I am walking";
 	static final String MSG_BIRD_FLYING = "I am flying";
