@@ -11,6 +11,9 @@ public class FishTest {
 	@Test
 	public void testCanSwim() {
 		assertTrue(testSubject.canSwim());
+		assertTrue(testSubject.getColour() == null);
+		assertTrue(testSubject.getSize() == null);
+		assertTrue(testSubject.getCharacteristic() == null);
 	}
 
 }
