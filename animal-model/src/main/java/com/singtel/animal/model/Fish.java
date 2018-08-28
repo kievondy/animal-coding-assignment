@@ -40,9 +40,4 @@ public class Fish implements Vertebrate, AnimalThatCanSwim {
 		this.characteristic = characteristic;
 	}
 
-	@Override
-	public boolean canSwim() {
-		return true;
-	}
-
 }
