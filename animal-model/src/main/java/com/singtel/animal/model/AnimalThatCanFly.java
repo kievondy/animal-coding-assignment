@@ -9,7 +9,7 @@ public interface AnimalThatCanFly {
 	}
 
 	default String fly() {
-		return MSG_FLYING;
+		return canFly() ? MSG_FLYING : null;
 	};
 
 }
