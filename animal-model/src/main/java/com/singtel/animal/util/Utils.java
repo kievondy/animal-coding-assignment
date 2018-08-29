@@ -1,6 +1,8 @@
 package com.singtel.animal.util;
 
+import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 import com.singtel.animal.model.Animal;
 import com.singtel.animal.model.AnimalThatCanFly;
@@ -33,7 +35,7 @@ public class Utils {
 		}
 		return false;
 	};
-	
+
 	// AnimalThatCanFly predicate
 	public static Predicate<Animal> ANIMAL_THAT_CAN_FLY_PREDICATE = animal -> {
 		if (animal instanceof AnimalThatCanFly) {
@@ -44,5 +46,24 @@ public class Utils {
 		return false;
 	};
 
+	public static int countAnimalThatCanSwim(List<Animal> animalList) {
+		return countAnimals(animalList, Utils.ANIMAL_THAT_CAN_SWIM_PREDICATE);
+	}
+
+	public static int countAnimalThatCanSing(List<Animal> animalList) {
+		return countAnimals(animalList, Utils.ANIMAL_THAT_CAN_MAKE_SOUND_PREDICATE);
+	}
+
+	public static int countAnimalThatCanWalk(List<Animal> animalList) {
+		return countAnimals(animalList, Utils.ANIMAL_THAT_CAN_WALK_PREDICATE);
+	}
+
+	public static int countAnimalThatCanFly(List<Animal> animalList) {
+		return countAnimals(animalList, Utils.ANIMAL_THAT_CAN_FLY_PREDICATE);
+	}
+
+	public static int countAnimals(List<Animal> animalList, Predicate<Animal> predicate) {
+		return animalList.stream().filter(predicate).collect(Collectors.toList()).size();
+	}
 
 }
