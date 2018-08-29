@@ -1,5 +1,7 @@
 package com.singtel.animal.model;
 
-public interface Animal {
+import java.io.Serializable;
+
+public interface Animal extends Serializable {
 
 }

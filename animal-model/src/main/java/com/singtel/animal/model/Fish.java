@@ -2,6 +2,8 @@ package com.singtel.animal.model;
 
 public class Fish implements Vertebrate, AnimalThatCanSwim {
 
+	private static final long serialVersionUID = 1L;
+
 	FishSize size = null;
 	FishColour colour = null;
 	String characteristic = null;

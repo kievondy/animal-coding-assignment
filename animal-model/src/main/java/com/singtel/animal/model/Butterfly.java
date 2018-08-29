@@ -2,6 +2,8 @@ package com.singtel.animal.model;
 
 public class Butterfly extends Insect implements AnimalThatCanFly, AnimalThatCanWalk {
 
+	private static final long serialVersionUID = 1L;
+
 	// Default state is Adult
 	ButterflyLifeCycleState state = ButterflyLifeCycleState.ADULT;
 

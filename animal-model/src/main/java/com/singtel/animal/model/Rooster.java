@@ -9,6 +9,8 @@ import java.util.function.BiConsumer;
 
 public class Rooster extends Chicken {
 
+	private static final long serialVersionUID = 1L;
+
 	static final String DEFAULT_LANGUAGE = "English";
 
 	static final Locale DEFAULT_LOCALE = Arrays.asList(Locale.getAvailableLocales())

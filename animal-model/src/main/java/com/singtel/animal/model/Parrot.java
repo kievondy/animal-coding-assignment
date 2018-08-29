@@ -2,6 +2,8 @@ package com.singtel.animal.model;
 
 public class Parrot extends Bird {
 
+	private static final long serialVersionUID = 1L;
+
 	private String voiceToMimic;
 
 	public Parrot(String voiceToMimic) {

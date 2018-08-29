@@ -2,6 +2,8 @@ package com.singtel.animal.model;
 
 public class Chicken extends Bird {
 
+	private static final long serialVersionUID = 1L;
+
 	static final String MSG_CHICKEN_SINGING = "Cluck, cluck";
 
 	@Override
